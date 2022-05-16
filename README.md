@@ -16,3 +16,5 @@ The project made for the Hackaton "Hack The Ocean"<br>
   
 <h2>Screenshots</h2>
 <img src="https://raw.githubusercontent.com/oscar-cbrlc/free-ocean-web-page/main/Screenshot_1.jpg">
+<img src="https://raw.githubusercontent.com/oscar-cbrlc/free-ocean-web-page/main/Screenshot_2.jpg">
+<img src="https://raw.githubusercontent.com/oscar-cbrlc/free-ocean-web-page/main/Screenshot_3.jpg">
