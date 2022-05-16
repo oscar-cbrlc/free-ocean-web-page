@@ -1,3 +1,5 @@
+const GETALL_URL = "https://freeoceanapi.azurewebsites.net/v1/meetings";
+
 
 function removePageEntries()  {
     removeElementsByClass("card bg-dark text-white");
@@ -62,7 +64,7 @@ function createCard(meeting) {
 
 async function updateMeetings() {
     removePageEntries();
-    const meetings = await fetchInfo("http://localhost:3000/v1/meetings")
+    const meetings = await fetchInfo(GETALL_URL);
     
     meetings.forEach(meeting => {
         var container = document.getElementById("home")
