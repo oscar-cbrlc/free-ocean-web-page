@@ -60,22 +60,59 @@
                       <p class="card-text">Last updated 3 mins ago</p>
                     </div>
                   </div>
-                  <div class="card bg-dark text-white">
-                    <img src="./img/océano-e1537912452876.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                  </div>
-            </section>
+             
 
-            <!--=============== ABOUT ===============-->
+            <!--=============== programados ===============-->
             <section class="container section section__height" id="about">
                 <h2 class="section__title">programados</h2>
+                                                      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    agregar evento
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Agregar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!---form-->
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Adjuntar la portada de tu evento</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">organizador</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">descripcion</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">tags (separar por ",")</label>
+              </div>
+              <input type="date" name="fecha " id="dates">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="submit">Proponer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
             </section>
 
-            <!--=============== SKILLS ===============-->
+            <!--=============== perfil ===============-->
             <section class="container section section__height" id="skills">
                 <h2 class="section__title">Perfil</h2>
                 <section class="seccion-perfil-usuario">
@@ -112,8 +149,7 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
-    <footer>
-        <script src="./index.js"></script>
-    </footer>
 </html>
